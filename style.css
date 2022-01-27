@@ -1,175 +1,73 @@
-html {
-  background-color: #2d2a2e;
-}
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  text-align: justify;
-  align-items: center;
-  margin: 0;
-  font-family: "Courier New", Courier, monospace;
+  margin: 0 128px 0 128px;
 }
-/* header */
+
 .header {
-  background-color: rgb(90, 84, 92);
-  color: #fc9867;
-  font-size: 20px;
-  margin: 0;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-.header__logo {
-  font-size: 36px;
-  padding-left: 8px;
-}
-.header__ul {
+.header__nav {
   list-style-type: none;
   display: flex;
-  gap: 0.75em;
 }
-.header__li {
+.header__listItem {
   padding: 8px;
 }
-.header__lnk {
+.header__link {
+  /*
+  color: #f9faf8; */
   text-decoration: none;
-  color: #fc9867;
-}
-.header__lnk:hover {
-  color: rgb(225, 210, 230);
-}
-/* mainOne */
-.mainOne {
-  color: rgb(225, 210, 230);
-  display: flex;
-  box-sizing: border-box;
-  width: 100%;
-
-  max-width: 1000px;
-}
-.mainOne__text {
-  display: flex;
-  flex-wrap: wrap;
-}
-.mainOne__title {
-  display: flex;
-  align-self: center;
-  width: 100%;
-}
-.mainOne__img {
-  max-width: 300px;
-  max-height: 300px;
-  padding: 32px;
-
-  border-radius: 40px;
-}
-.mainOne__button {
-  display: block;
-  background-color: rgb(90, 84, 92);
-  color: rgb(225, 210, 230);
-  border-radius: 15px;
-  align-self: center; /* w/o this, the button will bloat up due to mainOne__img increasing flexbox size I think */
-}
-.mainOne__button:hover {
-  color: #ffd866;
 }
 
-/* mainTwo */
-.mainTwo {
-  background-color: rgb(90, 84, 92);
-  color: rgb(225, 210, 230);
-  width: 100%;
-}
-.mainTwo__field {
+/*
+.content {
   display: flex;
-  box-sizing: border-box;
+  flex-direction: column;
+  height: 100vh;
+} */
+.heroText {
+  display: flex;
+}
+.images__title {
+  display: flex;
   justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+  padding: 32px 0 32px 0;
 }
-.mainTwo__title {
+.images__cards {
   display: flex;
-  flex: 0 1 auto;
-  width: 100%;
+  align-items: center;
   justify-content: center;
-}
-.mainTwo__card {
-  box-sizing: border-box;
-  background-color: rgb(180, 168, 184);
   text-align: center;
-  text-decoration: none;
-  color: #2d2a2e;
-  border: 1px solid #2d2a2e;
-  box-shadow: 2px 4px 16px #2d2a2e;
-  width: 200px;
-  height: 280px;
-  margin: 16px;
-  padding: 24px;
-  border-radius: 24px;
+  gap: 32px;
 }
-.mainTwo__card:hover {
-  box-shadow: 4px 8px 32px #fc9867;
-  background-color: rgb(225, 210, 230);
+.images__singCard {
+  max-width: 150px;
 }
-.mainTwo__img {
-  border: 1px solid #2d2a2e;
+.images__img {
+  border: 4px solid #3882f6;
   border-radius: 16px;
   width: 150px;
   height: 150px;
 }
-/* quote */
 .quote {
-  background-color: rgb(90, 84, 92);
-  color: rgb(225, 210, 230);
-  font-size: 24px;
-  width: 100%;
-}
-.quote__text {
-  font-style: italic;
+  text-align: justify;
 }
 .quote__name {
-  /*
-  padding: 0px 32px 32px 32px;*/
   display: flex;
   justify-content: flex-end;
-  font-weight: 600;
-  text-decoration: underline;
 }
-/* cta */
-.cta {
-  background-color: #2d2a2e;
-  color: #ffd866;
-  margin: 32px;
-  /*
-  padding: 0 64px 0px 128px;*/
-}
-.cta__field {
-  background-color: #ae81ff;
-  border-radius: 20px;
-  padding: 8px;
-  max-width: 1000px;
-}
-.cta__button {
-  background-color: rgb(90, 84, 92);
-  color: rgb(225, 210, 230);
-  width: 100%;
-  height: 50px;
-  border-radius: 15px;
-
-  margin: 32px 0px 0px 0px;
-}
-.cta__button:hover {
-  color: #ffd866;
-}
-/* footer */
 .footer {
-  background-color: rgb(90, 84, 92);
-  color: #fc9867;
   display: flex;
-  width: 100%;
   justify-content: center;
+  padding: 32px;
 
-  padding: 32px 0px 32px;
+  width: 100%;
+  /* 
+  position: fixed;
+  width: 100%;
+  bottom: 0; */
 }
