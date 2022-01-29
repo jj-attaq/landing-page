@@ -1,3 +1,3 @@
 # landing-page
 
-all images gotten from https://www.rocklou.com/
+all album images gotten from https://www.rocklou.com/
